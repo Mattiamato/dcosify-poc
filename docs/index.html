@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="css/post.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Docsify-POC',
+
+      logo: '/images/logo.svg',
+      coverpage: 'cover.md',
+
+      maxLevel: 4,
+      repo: '',
+      loadNavbar: true,
+
+      copyCode: {
+        buttonText: {
+          '/de/'   : 'Klicken Sie zum Kopieren',
+          '/'      : 'Copy to clipboard'
+        },
+        errorText: {
+          '/de/'  : 'Fehler',
+          '/'     : 'Error'
+        },
+        successText: {
+          '/de/'  : 'Kopiert',
+          '/'     : 'Copied'
+        }
+      },
+
+      // complete configuration parameters
+      search: {
+        maxAge: 86400000, // Expiration time, the default one day
+
+        placeholder: 'Type to search',
+        noData: 'No Results!',
+
+        // Localization
+        placeholder: {
+          '/de/': 'Tippe um zu suchen',
+          '/': 'Type to search'
+        },
+        noData: {
+          '/de/': 'Keine Ergebnisse',
+          '/': 'No Results'
+        }
+      },
+
+      darkMode: {
+        dark: {
+          background: "#1c2022",
+          toggleBtnBg: "#34495e",
+          textColor: "#b4b4b4"
+        },
+        light: {
+          background: "#f7f4ed",
+          toggleBtnBg: "var(--theme-color)",
+          textColor: "#34495e"
+        }
+      }
+    }
+  </script>
+
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+  <!-- Emoji plugin -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+
+  <!-- Language highlighting via Prism. See https://docsify.js.org/#/language-highlight -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+
+  <!-- Full text search -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+  <!-- Zoom image -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+  <!-- Copy to clipboard -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+
+  <!-- Dark mode -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css" />
+  <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
+</body>
+</html>
